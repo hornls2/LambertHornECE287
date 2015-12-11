@@ -21,65 +21,89 @@ agreement for further details.
 */
 (header "symbol" (version "1.1"))
 (symbol
-	(rect 16 16 216 160)
+	(rect 16 16 208 192)
 	(text "hw_image_generator" (rect 5 0 88 12)(font "Arial" ))
-	(text "inst" (rect 8 128 20 140)(font "Arial" ))
+	(text "inst" (rect 8 160 20 172)(font "Arial" ))
 	(port
 		(pt 0 32)
 		(input)
-		(text "switch" (rect 0 0 23 12)(font "Arial" ))
-		(text "switch" (rect 21 27 44 39)(font "Arial" ))
+		(text "reset" (rect 0 0 20 12)(font "Arial" ))
+		(text "reset" (rect 21 27 41 39)(font "Arial" ))
 		(line (pt 0 32)(pt 16 32)(line_width 1))
 	)
 	(port
 		(pt 0 48)
 		(input)
-		(text "disp_ena" (rect 0 0 35 12)(font "Arial" ))
-		(text "disp_ena" (rect 21 43 56 55)(font "Arial" ))
+		(text "playerturn" (rect 0 0 40 12)(font "Arial" ))
+		(text "playerturn" (rect 21 43 61 55)(font "Arial" ))
 		(line (pt 0 48)(pt 16 48)(line_width 1))
 	)
 	(port
 		(pt 0 64)
 		(input)
-		(text "column[31..0]" (rect 0 0 51 12)(font "Arial" ))
-		(text "column[31..0]" (rect 21 59 72 71)(font "Arial" ))
-		(line (pt 0 64)(pt 16 64)(line_width 3))
+		(text "sbutton" (rect 0 0 28 12)(font "Arial" ))
+		(text "sbutton" (rect 21 59 49 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
 	)
 	(port
 		(pt 0 80)
 		(input)
-		(text "row[31..0]" (rect 0 0 37 12)(font "Arial" ))
-		(text "row[31..0]" (rect 21 75 58 87)(font "Arial" ))
+		(text "count[5..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "count[5..0]" (rect 21 75 62 87)(font "Arial" ))
 		(line (pt 0 80)(pt 16 80)(line_width 3))
 	)
 	(port
 		(pt 0 96)
 		(input)
-		(text "h_count1[31..0]" (rect 0 0 59 12)(font "Arial" ))
-		(text "h_count1[31..0]" (rect 21 91 80 103)(font "Arial" ))
-		(line (pt 0 96)(pt 16 96)(line_width 3))
+		(text "disp_ena" (rect 0 0 35 12)(font "Arial" ))
+		(text "disp_ena" (rect 21 91 56 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96)(line_width 1))
 	)
 	(port
-		(pt 200 32)
+		(pt 0 112)
+		(input)
+		(text "column[31..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "column[31..0]" (rect 21 107 72 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "row[31..0]" (rect 0 0 37 12)(font "Arial" ))
+		(text "row[31..0]" (rect 21 123 58 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 192 32)
 		(output)
 		(text "red[7..0]" (rect 0 0 33 12)(font "Arial" ))
-		(text "red[7..0]" (rect 146 27 179 39)(font "Arial" ))
-		(line (pt 200 32)(pt 184 32)(line_width 3))
+		(text "red[7..0]" (rect 138 27 171 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(port
-		(pt 200 48)
+		(pt 192 48)
 		(output)
 		(text "green[7..0]" (rect 0 0 42 12)(font "Arial" ))
-		(text "green[7..0]" (rect 137 43 179 55)(font "Arial" ))
-		(line (pt 200 48)(pt 184 48)(line_width 3))
+		(text "green[7..0]" (rect 129 43 171 55)(font "Arial" ))
+		(line (pt 192 48)(pt 176 48)(line_width 3))
 	)
 	(port
-		(pt 200 64)
+		(pt 192 64)
 		(output)
 		(text "blue[7..0]" (rect 0 0 35 12)(font "Arial" ))
-		(text "blue[7..0]" (rect 144 59 179 71)(font "Arial" ))
-		(line (pt 200 64)(pt 184 64)(line_width 3))
+		(text "blue[7..0]" (rect 136 59 171 71)(font "Arial" ))
+		(line (pt 192 64)(pt 176 64)(line_width 3))
 	)
+	(parameter
+		"MIN_COUNT"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"MAX_COUNT"
+		"255"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
 		"pixels_y"
 		"1920"
@@ -91,37 +115,102 @@ agreement for further details.
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"pixels_y1"
+		"wide"
+		"8"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Lboxbound"
+		"0"
+		""
+		(type "PARAMETER_SIGNED_DEC")	)
+	(parameter
+		"Rboxbound"
 		"1920"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"pixels_x2"
-		"1920"
+		"box_heights"
+		"20"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"x1"
-		"930"
+		"box_heightf"
+		"115"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"x2"
-		"980"
+		"box_widths"
+		"20"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"y1"
-		"510"
+		"box_widthf"
+		"200"
 		""
 		(type "PARAMETER_SIGNED_DEC")	)
 	(parameter
-		"y2"
-		"570"
+		"gbRed"
+		"11111010"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"gbGreen"
+		"00000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"gbBlue"
+		"11111101"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"gb2Red"
+		"11111010"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"gb2Green"
+		"11110000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"gb2Blue"
+		"11100110"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"p1Red"
+		"11111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"p1Green"
+		"00000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"p1Blue"
+		"00000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"p2Red"
+		"11111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"p2Green"
+		"11111111"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
+	(parameter
+		"p2Blue"
+		"00000000"
+		""
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
-		(rectangle (rect 16 16 184 128)(line_width 1))
+		(rectangle (rect 16 16 176 160)(line_width 1))
 	)
-	(annotation_block (parameter)(rect 216 -64 316 16))
+	(annotation_block (parameter)(rect 208 -64 308 16))
 )

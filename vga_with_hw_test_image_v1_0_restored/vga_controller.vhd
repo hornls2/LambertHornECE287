@@ -44,8 +44,8 @@ ENTITY vga_controller IS
 		column		:	OUT	INTEGER;		--horizontal pixel coordinate
 		row			:	OUT	INTEGER;		--vertical pixel coordinate
 		n_blank		:	OUT	STD_LOGIC;	--direct blacking output to DAC
-		n_sync		:	OUT	STD_LOGIC; --sync-on-green output to DAC
-		h_count1 : out INTEGER );
+		n_sync		:	OUT	STD_LOGIC); --sync-on-green output to DAC
+		
 END vga_controller;
 
 ARCHITECTURE behavior OF vga_controller IS
@@ -75,7 +75,7 @@ BEGIN
 			--counters
 			IF(h_count < h_period - 1) THEN		--horizontal counter (pixels)
 				h_count := h_count + 1;
-				h_count1 <= h_count;
+
 			ELSE
 				h_count := 0;
 				IF(v_count < v_period - 1) THEN	--veritcal counter (rows)

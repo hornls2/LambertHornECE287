@@ -1,5 +1,5 @@
 Flow report for vga_with_hw_test_image
-Mon Nov 30 13:17:05 2015
+Fri Dec 11 14:26:24 2015
 Quartus II 64-Bit Version 14.0.0 Build 200 06/17/2014 SJ Web Edition
 
 
@@ -41,18 +41,18 @@ agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Mon Nov 30 13:17:05 2015      ;
+; Flow Status                        ; Successful - Fri Dec 11 14:26:23 2015      ;
 ; Quartus II 64-Bit Version          ; 14.0.0 Build 200 06/17/2014 SJ Web Edition ;
 ; Revision Name                      ; vga_with_hw_test_image                     ;
 ; Top-level Entity Name              ; vga_with_hw_test_image                     ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 2,081 / 114,480 ( 2 % )                    ;
-;     Total combinational functions  ; 2,075 / 114,480 ( 2 % )                    ;
-;     Dedicated logic registers      ; 64 / 114,480 ( < 1 % )                     ;
-; Total registers                    ; 64                                         ;
-; Total pins                         ; 31 / 529 ( 6 % )                           ;
+; Total logic elements               ; 2,187 / 114,480 ( 2 % )                    ;
+;     Total combinational functions  ; 2,187 / 114,480 ( 2 % )                    ;
+;     Dedicated logic registers      ; 58 / 114,480 ( < 1 % )                     ;
+; Total registers                    ; 58                                         ;
+; Total pins                         ; 36 / 529 ( 7 % )                           ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                      ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
@@ -65,7 +65,7 @@ agreement for further details.
 +-------------------+------------------------+
 ; Option            ; Setting                ;
 +-------------------+------------------------+
-; Start date & time ; 11/30/2015 13:15:46    ;
+; Start date & time ; 12/11/2015 14:24:32    ;
 ; Main task         ; Compilation            ;
 ; Revision Name     ; vga_with_hw_test_image ;
 +-------------------+------------------------+
@@ -76,7 +76,7 @@ agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 57277344157833.144890734603316 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 57277343970289.144986187106316 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; IP_TOOL_NAME                        ; ALTPLL                         ; --            ; --          ; --             ;
@@ -102,12 +102,12 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 638 MB              ; 00:00:06                           ;
-; Fitter                    ; 00:00:21     ; 1.0                     ; 944 MB              ; 00:00:18                           ;
-; Assembler                 ; 00:00:06     ; 1.0                     ; 509 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 628 MB              ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:13     ; 1.0                     ; 463 MB              ; 00:00:05                           ;
-; Total                     ; 00:00:58     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Synthesis      ; 00:00:41     ; 1.0                     ; 607 MB              ; 00:00:39                           ;
+; Fitter                    ; 00:00:22     ; 1.0                     ; 939 MB              ; 00:00:19                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 510 MB              ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:09     ; 1.0                     ; 622 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:09     ; 1.0                     ; 472 MB              ; 00:00:03                           ;
+; Total                     ; 00:01:27     ; --                      ; --                  ; 00:01:08                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -116,11 +116,11 @@ agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; CEC-EGB267-4     ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; CEC-EGB267-4     ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; CEC-EGB267-4     ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; CEC-EGB267-4     ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; CEC-EGB267-4     ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; CEC-EGB267-8     ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; CEC-EGB267-8     ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; CEC-EGB267-8     ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; CEC-EGB267-8     ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; CEC-EGB267-8     ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
