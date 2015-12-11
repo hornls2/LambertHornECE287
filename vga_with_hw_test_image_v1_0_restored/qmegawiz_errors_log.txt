@@ -1,0 +1,28 @@
+
+
+C:/Users/lambers2/Downloads/vga_with_hw_test_image_v1_0_restored/vga_pll.vhd
+
+Nov 14 04PM:07:28>: Error in CNX file format.
+
+Error messages are listed in file
+C:/Users/lambers2/Downloads/vga_with_hw_test_image_v1_0_restored/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+M:/ECE 287/VGA Display/vga_with_hw_test_image_v1_0_restored/vga_pll.vhd
+
+Nov 14 04PM:39:45>: Error in CNX file format.
+
+Error messages are listed in file
+M:/ECE 287/VGA Display/vga_with_hw_test_image_v1_0_restored/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
+
+M:/ECE 287/project/vga_with_hw_test_image_v1_0_restored/vga_pll.vhd
+
+Nov 30 12PM:37:51>: Error in CNX file format.
+
+Error messages are listed in file
+M:/ECE 287/project/vga_with_hw_test_image_v1_0_restored/vga_pll.cnxerr.
+
+Can't create the custom megafunction variation file(s)
